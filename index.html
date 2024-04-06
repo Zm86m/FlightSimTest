@@ -82,6 +82,7 @@
             ctx.fillRect(-aircraft.width / 2, -aircraft.height / 2, aircraft.width, aircraft.height);
 
             ctx.restore();
+            gameloop();
         }
 
         function resetAircraft() {
@@ -95,7 +96,6 @@
 
         function gameLoop() {
             update();
-            requestAnimationFrame(gameLoop);
         }
 
         document.addEventListener('keydown', function(event) {
